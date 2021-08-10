@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "lato", sans-serif;
+}
+
+@font-face {
+  font-family: Cocogoose;
+  src: url(/fonts/Cocogoose\ Pro-trial.ttf);
+}
+
+@media only screen and (min-width: 768px) {
+  .top-bar-section {
+    display: block;
+    position: relative;
+    background-color: black;
+  }
+
+  .top-bar-container {
+    width: 85%;
+    margin: auto;
+  }
+
+  .top-bar {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .top-bar li {
+    background-color: black;
+    color: white;
+    padding-inline: 0.8%;
+    cursor: pointer;
+  }
+
+  .top-bar-section .top-bar-container .top-bar li h4 {
+    font-size: 1rem;
+    color:#272a31
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar .container-fluid .navbar-brand {
+    display: none;
+  }
+
+  .top-bar-section {
+    display: none;
+  }
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+.navbar .container-fluid .btn-outline-success {
+  color: #ec5242;
+  border: 3px solid #ec5242;
+  font-weight: 600;
+}
+
+.navbar .container-fluid .btn-outline-success:hover {
+  color: white;
+  background-color: #ec5242;
+}
+
+.first-section {
+  background-image: url(/images/first-section.png);
+  background-repeat: no-repeat;
+  margin-top: -4rem;
+  position: absolute;
+}
+
+.first-section .first-section-container {
+  margin: 20px;
+}
+
+.first-section .first-section-container .second-heading {
+  color: #ec5242;
+  padding-top: 4rem;
+  font-family: 'Cocogoose';
+  color:#272a31
+}
+
+.first-section
+  .first-section-container
+  .first-section-paragraph
+  .first-paragraph {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 58px;
+  border: 3px solid white;
+  color:#272a31
+
+  
+}
+
+.first-section .first-section-container .event-details {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: 'Cocogoose';
+}
+
+
+.first-section .first-section-container h1 {
+  font-size: 37px;
+  font-family: 'Cocogoose';
+  color: #ec5242;
+}
+
+.navbar-light .navbar-toggler {
+  z-index: 99;
+}
+
+.navbar-toggler-icon {
+  height: 1em;
+  width: 1em;
+  border: none;
+  outline: none;
+}
+
+.first-section .first-section-container .event-details h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.second-section {
+  margin-top: 30rem;
+  background-image: url(/images/repeat-bg.png);
+  color: white;
+}
+
+.second-section .second-section-container .second-section-heading {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.second-section .second-section-container  .program-list {
+  display: grid;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.second-section .second-section-container .second-section-heading span {
+  border-bottom: 3px solid #ec5242;
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
+
+.second-section .second-section-container .program-list .icons {
+  width: 37px;
+  height: 40px;
+  margin-top: 7px;
+}
+
+.second-section .second-section-container .program-list .flex-box {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  background-color: #272a31;
+  padding: 20px;
+}
+
+.second-section .second-section-container .program-list .first-block h2,
+.second-section .second-section-container .program-list .second-block h2,
+.second-section .second-section-container .program-list .third-block h2,
+.second-section .second-section-container .program-list .fourth-block h2,
+.second-section .second-section-container .program-list .fifth-block h2 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  padding: 0 20px 0 10px;
+}
+
+.second-section .second-section-container .program-list .flex-box .button-container .btn-primary {
+  padding: 10px;
+}
+
+.second-section .second-section-container .program-list .first-block p,
+.second-section .second-section-container .program-list .second-block p,
+.second-section .second-section-container .program-list .third-block p,
+.second-section .second-section-container .program-list .fourth-block p,
+.second-section .second-section-container .program-list .fifth-block p {
+  font-size: 12px;
+}
+
+.second-section .second-section-container .btn {
+  padding: 20px;
+  background: #ec5242;
+  border: none;
+  border-radius: unset;
+  font-size: 14px;
+  font-family: 'Circular-Loom';
+  margin: 2rem 3.8rem;
+  width: 262px;
+}
+
+.second-section .second-section-container .btn:hover {
+ box-shadow: #ec5242;
+}
+
+.second-section .second-section-container .btn:active {
+  color: #fff;
+  background-color: #ec5242;
+  border-color: #ec5242;
+  box-shadow: #ec5242;
+}
+
+.second-section .second-section-container .btn:focus {
+  background-color: #ec5242;
+  border-color: #ec5242;
+  box-shadow: 1px 1px 1px 1px #ec5242;
+}
