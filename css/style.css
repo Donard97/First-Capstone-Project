@@ -329,3 +329,86 @@ body {
   padding-top: 12px;
   font-weight: 500;
 }
+
+/* About page style */
+
+.first-section .about-paragraph {
+  position: relative;
+  border: 1px solid #d3d3d3;
+  padding: 18px;
+  text-align: center;
+  background: white;
+  font-size: 9px;
+  font-family: 'COCOGOOSE';
+  color: #272a31;
+  line-height: 20px;
+}
+.first-section .contact .p-contact {
+  text-align: center;
+  font-size: 13px;
+  padding: 30px;
+  font-family: "lato", sans-serif;
+  font-weight: 500;
+ }
+
+ .first-section .contact .p-contact strong {
+  border-bottom: 1px solid black;
+ }
+
+ .about-second-section {
+  margin-top: 48rem;
+  position: relative;
+  text-align: center;
+ }
+
+ .about-second-section img {
+   width: 100%;
+ }
+
+ .about-second-section h3 {
+  padding: 10px 10px 0 5px;
+ }
+
+ .about-second-section h3 span {
+  border-bottom: 2px solid #ec5242;
+ }
+
+ .about-second-section p {
+   font-size: 12px;
+   margin: 37px;
+   color: #272a31;
+   font-weight: 00;
+ }
+
+ .events {
+ text-align: center;
+ }
+
+ .events h4 {
+  font-size: 20px;
+ }
+
+ .events h4 span {
+  border-bottom: 2px solid #ec5242;
+  padding-bottom: 5px;
+ }
+
+.events p {
+  font-size: 11px;
+  margin: 30px 20px;
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+  line-height: 20px;
+}
+
+.events .first-event {
+  width: 100%;
+  padding: 20px 20px 10px 20px;
+
+}
+
+.events .second-event {
+  width: 100%;
+  padding: 10px 20px 20px 20px;
+
+}
