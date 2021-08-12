@@ -2,6 +2,9 @@
 
 > This project contains the HTML, CSS and JavaScript Capstone Project. Capstone Projects are done at the end of a module at Microverse.
 
+![capstone](https://user-images.githubusercontent.com/74506933/129203153-fd268ae7-5e23-4da7-9538-65c039a96714.PNG)
+![capsonte-1](https://user-images.githubusercontent.com/74506933/129203208-b68ff4ef-dbf4-4775-8fc6-70e0fe50d302.PNG)
+
 
 # Project Name
 ## Software Developer Global Summit
