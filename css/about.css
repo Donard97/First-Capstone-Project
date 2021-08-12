@@ -12,9 +12,8 @@ body {
   cursor: pointer;
   appearance: none;
   background: none;
-  outline: none;
-  border: none;
   z-index: 99;
+  border: none;
 }
 
 .hamburger .bar {
@@ -158,14 +157,20 @@ ul {
     cursor: pointer;
   }
 
-  .top-bar-section .top-bar-container .top-bar li h4 {
+  .top-bar a {
     font-size: 15px;
     color: white;
     font-weight: 400;
     padding-top: 4px;
+    text-decoration: none;
   }
 
-  .top-bar-section .top-bar-container .top-bar li h4:hover {
+  .footer-flex .footer-logo a {
+    color: white;
+    font-weight: 500 !important;
+  }
+
+  .top-bar a:hover {
     color: #ec5242;
   }
 
@@ -173,11 +178,11 @@ ul {
     padding-left: 16rem;
   }
 
-  .navbar .container-fluid .btn-outline-success {
+  .btn-outline-success {
     margin-right: 14rem;
   }
 
-  .navbar-light .navbar-nav .nav-link:hover {
+  .nav-link:hover {
     color: #ec5242 !important;
   }
 
@@ -191,18 +196,18 @@ ul {
     margin-top: 6rem;
   }
 
-  .first-section .first-section-container .second-heading {
+  .first-section .second-heading {
     display: none;
   }
 
-  .first-section .first-section-container h1 {
+  .first-section h1 {
     font-size: 47px !important;
     margin: 0 4rem;
     padding-top: 5rem;
     width: 70%;
   }
 
-  .first-section .first-section-container .event-details {
+  .first-section .event-details {
     padding-top: 2rem;
   }
 
@@ -210,7 +215,7 @@ ul {
     width: 25% !important;
   }
 
-  .navbar .container-fluid .navbar-brand img {
+  .navbar-brand img {
     width: 20%;
   }
 
@@ -223,7 +228,7 @@ ul {
     font-family: "lato", sans-serif !important;
   }
 
-  .first-section .contact .p-contact {
+  .first-section .p-contact {
     padding-right: 15rem !important;
   }
 
@@ -259,18 +264,13 @@ ul {
     padding: 2rem 0;
   }
 
-  footer .footer-flex .footer-logo a {
-    color: white;
-    font-weight: 500 !important;
-  }
-
-  footer .footer-flex .copyright {
-    color: white;
+  .copyright {
+    color: white !important;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .navbar .container-fluid .navbar-brand {
+  .navbar-brand {
     display: none;
   }
 
@@ -354,7 +354,7 @@ ul {
   padding: 10px 10px 0 5px;
 }
 
-.first-section .first-section-container .event-details h3 {
+.event-details h3 {
   font-size: 1.3rem;
   font-weight: 400;
 }
@@ -379,7 +379,7 @@ ul {
   margin-bottom: 20px;
 }
 
-.speaker-section .speaker-image-section .speaker-image {
+.speaker-section .speaker-image {
   width: 100px;
   height: auto;
   margin: 10px;
@@ -398,11 +398,11 @@ ul {
   font-family: "Cocogoose", sans-serif;
 }
 
-.speaker-section .speaker-details .dots {
+.speaker-section .dots {
   margin: 0;
 }
 
-.speaker-section .speaker-details .speaker-history {
+.speaker-section .speaker-history {
   font-size: 9px;
   margin-bottom: 0;
 }

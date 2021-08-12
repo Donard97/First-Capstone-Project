@@ -12,10 +12,9 @@ body {
   cursor: pointer;
   appearance: none;
   background: none;
-  outline: none;
-  border: none;
   z-index: 99;
   margin: 15px;
+  border: none;
 }
 
 .hamburger .bar {
@@ -159,14 +158,15 @@ ul {
     cursor: pointer;
   }
 
-  .top-bar-section .top-bar-container .top-bar li h4 {
+  .top-bar a {
     font-size: 15px;
     color: white;
     font-weight: 400;
     padding-top: 4px;
+    text-decoration: none;
   }
 
-  .top-bar-section .top-bar-container .top-bar li h4:hover {
+  .top-bar a:hover {
     color: #ec5242;
   }
 
@@ -174,16 +174,16 @@ ul {
     padding-left: 16rem;
   }
 
-  .navbar .container-fluid .btn-outline-success {
+  .btn-outline-success {
     margin-right: 16rem;
     width: 130px;
   }
 
-  .navbar .container-fluid .navbar-brand img {
+  .navbar-brand img {
     width: 20%;
   }
 
-  .navbar-light .navbar-nav .nav-link:hover {
+  .nav-link:hover {
     color: #ec5242 !important;
   }
 
@@ -202,7 +202,7 @@ ul {
     width: 51%;
   }
 
-  .first-section .first-section-container .first-section-paragraph .first-paragraph {
+  .first-paragraph {
     font-size: 13px !important;
     font-weight: 600;
     width: 48% !important;
@@ -229,7 +229,7 @@ ul {
     width: 75%;
   }
 
-  .second-section .second-section-container .program-list .flex-box {
+  .program-list .flex-box {
     display: grid !important;
     justify-items: center;
     text-align: center;
@@ -316,7 +316,7 @@ ul {
   font-family: "lato", sans-serif;
 }
 
-.first-section .first-section-container .first-section-paragraph .first-paragraph {
+.first-paragraph {
   font-size: 12px;
   font-weight: 600;
   margin-top: 58px;
@@ -325,7 +325,7 @@ ul {
   background: #f7f7f7;
 }
 
-.first-section .first-section-container .event-details {
+.event-details {
   font-size: 13px;
   font-weight: 500;
   font-family: "Cocogoose", sans-serif;
@@ -344,7 +344,7 @@ ul {
   outline: none;
 }
 
-.first-section .first-section-container .event-details h3 {
+.first-section h3 {
   font-size: 1.3rem;
   font-weight: 400;
 }
@@ -355,17 +355,28 @@ ul {
   color: white;
 }
 
-.second-section .second-section-container .second-section-heading {
+.second-section .second-section-heading {
   color: white;
   display: flex;
   justify-content: center;
   padding: 30px;
 }
 
-.second-section .second-section-container .program-list {
+.program-list {
   display: grid;
   grid-gap: 10px;
   padding: 10px;
+}
+
+.partners-heading span {
+  border-bottom: 2px solid #ec5242;
+  padding-bottom: 5px;
+}
+
+.second-section-heading span {
+  border-bottom: 3px solid #ec5242;
+  padding-left: 5px;
+  padding-bottom: 10px;
 }
 
 .section-speakers-heading h2 span {
@@ -378,24 +389,13 @@ ul {
   padding-bottom: 5px;
 }
 
-.partners-section .partners-heading span {
-  border-bottom: 2px solid #ec5242;
-  padding-bottom: 5px;
-}
-
-.second-section .second-section-container .second-section-heading span {
-  border-bottom: 3px solid #ec5242;
-  padding-left: 5px;
-  padding-bottom: 10px;
-}
-
-.second-section .second-section-container .program-list .icons {
+.program-list .icons {
   width: 37px;
   height: 40px;
   margin-top: 7px;
 }
 
-.second-section .second-section-container .program-list .flex-box {
+.program-list .flex-box {
   display: inline-flex;
   flex-wrap: nowrap;
   justify-content: space-around;
@@ -408,19 +408,15 @@ ul {
   font-weight: 600;
 }
 
-.second-section .second-section-container .program-list .first-block h2,
-.second-section .second-section-container .program-list .second-block h2,
-.second-section .second-section-container .program-list .third-block h2,
-.second-section .second-section-container .program-list .fourth-block h2,
-.second-section .second-section-container .program-list .fifth-block h2 {
+.program-list h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 18px !important;
   padding: 0 20px 0 10px;
 }
 
-.second-section .second-section-container .program-list .flex-box .button-container .btn-primary {
+.btn-primary {
   padding: 10px;
 }
 
@@ -432,15 +428,11 @@ ul {
   line-height: 20px;
 }
 
-.second-section .second-section-container .program-list .first-block p,
-.second-section .second-section-container .program-list .second-block p,
-.second-section .second-section-container .program-list .third-block p,
-.second-section .second-section-container .program-list .fourth-block p,
-.second-section .second-section-container .program-list .fifth-block p {
+.program-list p {
   font-size: 12px;
 }
 
-.second-section .second-section-container .btn {
+.second-section .btn {
   padding: 20px;
   background: #ec5242;
   border: none;
@@ -451,13 +443,13 @@ ul {
   width: 262px;
 }
 
-.second-section .second-section-container .btn:active {
+.second-section .btn:active {
   color: #fff;
   background-color: #ec5242;
   border-color: #ec5242;
 }
 
-.second-section .second-section-container .btn:focus {
+.second-section .btn:focus {
   background-color: #ec5242;
   border-color: #ec5242;
   box-shadow: 1px 1px 1px 1px #ec5242;
@@ -473,29 +465,29 @@ ul {
   margin-bottom: 20px;
 }
 
-.speaker-section .speaker-image-section .speaker-image {
+.speaker-section .speaker-image {
   width: 100px;
   height: auto;
   margin: 10px;
 }
 
-.speaker-section .speaker-details .speaker-name {
+.speaker-section .speaker-name {
   font-size: 17px;
   color: #272a31;
 }
 
-.speaker-section .speaker-details .speaker-designation {
+.speaker-section .speaker-designation {
   font-size: 10px;
   font-style: italic;
   color: #ec5242;
   margin-bottom: -13px;
 }
 
-.speaker-section .speaker-details .dots {
+.speaker-details .dots {
   margin: 0;
 }
 
-.speaker-section .speaker-details .speaker-history {
+.speaker-history {
   font-size: 9px;
   margin-bottom: 0;
 }
@@ -508,11 +500,11 @@ ul {
   font-weight: 400;
 }
 
-.partners-section .partners-heading {
+.partners-heading {
   padding: 30px;
 }
 
-.partners-section .partners-heading strong {
+.partners-heading strong {
   font-weight: 500;
 }
 
@@ -522,7 +514,7 @@ ul {
   justify-content: center;
 }
 
-.partners-section .partners-flex img {
+.partners-flex img {
   width: 100px;
   margin: 10px;
 }
@@ -559,7 +551,7 @@ ul {
   line-height: 20px;
 }
 
-.first-section .contact .p-contact {
+.contact .p-contact {
   text-align: center;
   font-size: 13px;
   padding: 30px;
@@ -567,7 +559,7 @@ ul {
   font-weight: 500;
 }
 
-.first-section .contact .p-contact strong {
+.contact .p-contact strong {
   border-bottom: 1px solid black;
 }
 

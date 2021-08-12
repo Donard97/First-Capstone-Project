@@ -22,7 +22,6 @@ Software Developer is an annual conference event that is held internationally fo
 - HTML
 - CSS
 - JavaScript
-- Linters
 
 ### Technologies used
 - Github
@@ -40,7 +39,7 @@ git clone https://github.com/Donard97/First-Capstone-Project
 
 Github : [@Donard97](https://github.com/Donard97) <br>
 Twitter: [@donardgolaj](https://twitter.com/donardgolaj) <br>
-Linkdn : [@donard-golaj](https://www.linkedin.com/in/donard-golaj/) <br>
+LinkdIn : [@donard-golaj](https://www.linkedin.com/in/donard-golaj/) <br>
 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
