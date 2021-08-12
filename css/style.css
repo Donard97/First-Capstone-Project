@@ -87,6 +87,7 @@ ul {
   transition: 0.4s;
   margin: 0;
   margin-top: 4rem;
+  margin-left: -1rem;
 }
 
 .mobile-nav ul li {
@@ -97,6 +98,15 @@ ul {
   text-decoration: none;
   color: #272a31;
   font-family: "lato", sans-serif;
+}
+
+.footer-flex .footer-logo a {
+  text-decoration: none;
+  color: #272a31;
+}
+
+.mobile-nav ul li a:hover {
+  color: #ec5242;
 }
 
 .mobile-nav.is-active {
@@ -192,11 +202,8 @@ ul {
     width: 51%;
   }
 
-  .first-section
-    .first-section-container
-    .first-section-paragraph
-    .first-paragraph {
-    font-size: 13px;
+  .first-section .first-section-container .first-section-paragraph .first-paragraph {
+    font-size: 13px !important;
     font-weight: 600;
     width: 48% !important;
     margin-top: 0 !important;
@@ -232,7 +239,6 @@ ul {
   .second-section .second-section-container .program-list .flex-box:hover {
     border: 2px solid white;
   }
-   
 
   .featured-speakers {
     display: grid;
@@ -310,10 +316,7 @@ ul {
   font-family: "lato", sans-serif;
 }
 
-.first-section
-  .first-section-container
-  .first-section-paragraph
-  .first-paragraph {
+.first-section .first-section-container .first-section-paragraph .first-paragraph {
   font-size: 12px;
   font-weight: 600;
   margin-top: 58px;
@@ -325,12 +328,12 @@ ul {
 .first-section .first-section-container .event-details {
   font-size: 13px;
   font-weight: 500;
-  font-family: "Cocogoose";
+  font-family: "Cocogoose", sans-serif;
 }
 
 .first-section .first-section-container h1 {
   font-size: 37px;
-  font-family: "Cocogoose";
+  font-family: "Cocogoose", sans-serif;
   color: #ec5242;
 }
 
@@ -370,6 +373,16 @@ ul {
   padding-bottom: 10px;
 }
 
+.events h4 span {
+  border-bottom: 2px solid #ec5242;
+  padding-bottom: 5px;
+}
+
+.partners-section .partners-heading span {
+  border-bottom: 2px solid #ec5242;
+  padding-bottom: 5px;
+}
+
 .second-section .second-section-container .second-section-heading span {
   border-bottom: 3px solid #ec5242;
   padding-left: 5px;
@@ -407,13 +420,16 @@ ul {
   padding: 0 20px 0 10px;
 }
 
-.second-section
-  .second-section-container
-  .program-list
-  .flex-box
-  .button-container
-  .btn-primary {
+.second-section .second-section-container .program-list .flex-box .button-container .btn-primary {
   padding: 10px;
+}
+
+.events p {
+  font-size: 11px;
+  margin: 30px 20px;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+  line-height: 20px;
 }
 
 .second-section .second-section-container .program-list .first-block p,
@@ -430,7 +446,7 @@ ul {
   border: none;
   border-radius: unset;
   font-size: 14px;
-  font-family: "Circular-Loom";
+  font-family: "Cocogoose", sans-serif;
   margin: 2rem 3.8rem;
   width: 262px;
 }
@@ -473,7 +489,6 @@ ul {
   font-style: italic;
   color: #ec5242;
   margin-bottom: -13px;
-  font-family: "Cocogoose";
 }
 
 .speaker-section .speaker-details .dots {
@@ -495,11 +510,6 @@ ul {
 
 .partners-section .partners-heading {
   padding: 30px;
-}
-
-.partners-section .partners-heading span {
-  border-bottom: 2px solid #ec5242;
-  padding-bottom: 5px;
 }
 
 .partners-section .partners-heading strong {
@@ -526,21 +536,14 @@ ul {
 
 .footer-flex .footer-logo {
   padding: 20px;
-  font-size: 25px;
+  font-size: 12px;
   font-weight: 600;
-  font-family: "Cocogoose";
-}
-
-.footer-flex .footer-logo a {
-  text-decoration: none;
-  color: #272a31;
 }
 
 .footer-flex .copyright {
   font-size: 13px;
   padding: 33px 20px 20px 20px;
   color: #272a31;
-  padding-top: 12px;
   font-weight: 500;
 }
 
@@ -551,7 +554,7 @@ ul {
   text-align: center;
   background: white;
   font-size: 9px;
-  font-family: "COCOGOOSE";
+  font-family: "Cocogoose", sans-serif;
   color: #272a31;
   line-height: 20px;
 }
@@ -580,19 +583,6 @@ ul {
 
 .events h4 {
   font-size: 20px;
-}
-
-.events h4 span {
-  border-bottom: 2px solid #ec5242;
-  padding-bottom: 5px;
-}
-
-.events p {
-  font-size: 11px;
-  margin: 30px 20px;
-  font-weight: 500;
-  font-family: "Lato", sans-serif;
-  line-height: 20px;
 }
 
 .events .first-event {
