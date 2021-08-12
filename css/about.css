@@ -86,6 +86,7 @@ ul {
   transition: 0.4s;
   margin: 0;
   margin-top: 4rem;
+  margin-left: -1rem;
 }
 
 .mobile-nav ul li {
@@ -96,6 +97,15 @@ ul {
   text-decoration: none;
   color: #272a31;
   font-family: "lato", sans-serif;
+}
+
+.footer-flex .footer-logo a {
+  text-decoration: none;
+  color: #272a31;
+}
+
+.mobile-nav ul li a:hover {
+  color: #ec5242;
 }
 
 .mobile-nav.is-active {
@@ -124,7 +134,7 @@ ul {
     display: block;
     position: relative;
     background-color: black;
-    padding-right: 10.5rem;
+    padding-right: 8.5rem;
   }
 
   .top-bar-container {
@@ -155,49 +165,108 @@ ul {
     padding-top: 4px;
   }
 
-  .navbar-expand-md  {
+  .top-bar-section .top-bar-container .top-bar li h4:hover {
+    color: #ec5242;
+  }
+
+  .navbar-expand-md {
     padding-left: 16rem;
   }
 
   .navbar .container-fluid .btn-outline-success {
-    margin-right: 16rem;
+    margin-right: 14rem;
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #ec5242 !important;
   }
 
   .first-section {
     margin-top: 0 !important;
     width: 100%;
     padding-left: 16rem;
-
   }
 
   .first-section .first-section-container {
     margin-top: 6rem;
   }
 
+  .first-section .first-section-container .second-heading {
+    display: none;
+  }
+
   .first-section .first-section-container h1 {
     font-size: 47px !important;
-    width: 52%;
-}
+    margin: 0 4rem;
+    padding-top: 5rem;
+    width: 70%;
+  }
 
+  .first-section .first-section-container .event-details {
+    padding-top: 2rem;
+  }
 
-.first-section .first-section-container .second-heading {
-  display: none;
-}
+  .about-second-section img {
+    width: 25% !important;
+  }
 
-.first-section .first-section-container h1 {
-  font-size: 47px !important;
-  font-size: 47px !important;
-  text-align: center;
-  margin: 0 14rem;
-  padding-top: 5rem;
-}
+  .navbar .container-fluid .navbar-brand img {
+    width: 20%;
+  }
 
+  .first-section .about-paragraph {
+    padding: 18px 35px !important;
+    font-size: 12px !important;
+    width: 70%;
+    margin-left: 5rem;
+    margin-top: 4rem;
+    font-family: "lato", sans-serif !important;
+  }
 
-.first-section .first-section-container .event-details {
-  padding-top: 2rem;
-}
+  .first-section .contact .p-contact {
+    padding-right: 15rem !important;
+  }
 
+  .about-second-section h3 .span-1 {
+    display: none;
+  }
 
+  .about-second-section h3 .span-2 {
+    border-bottom: 2px solid #ec5242;
+  }
+
+  .events .events-images {
+    padding-bottom: 3rem;
+  }
+
+  .events .events-images .first-event {
+    width: 35%;
+    height: 280px;
+  }
+
+  .events .events-images .second-event {
+    width: 35%;
+    height: 280px;
+    margin-top: 20px;
+  }
+
+  footer {
+    background-color: #272a31;
+  }
+
+  .footer-flex {
+    width: 73% !important;
+    padding: 2rem 0;
+  }
+
+  footer .footer-flex .footer-logo a {
+    color: white;
+    font-weight: 500 !important;
+  }
+
+  footer .footer-flex .copyright {
+    color: white;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -209,6 +278,9 @@ ul {
     display: none;
   }
 
+  .first-section .about-paragraph .about-us span {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -223,6 +295,7 @@ ul {
 
 .navbar-light .navbar-toggler {
   border: none;
+  z-index: 99;
 }
 
 .navbar .container-fluid .btn-outline-success {
@@ -243,7 +316,7 @@ ul {
   position: absolute;
   background-size: cover;
   width: 100%;
-  height: 669px;
+  height: 550px;
   background-position: bottom;
   text-align: center;
 }
@@ -261,17 +334,13 @@ ul {
 .first-section .first-section-container .event-details {
   font-size: 13px;
   font-weight: 500;
-  font-family: "Cocogoose";
+  font-family: "Cocogoose", sans-serif;
 }
 
 .first-section .first-section-container h1 {
   font-size: 26px;
-  font-family: "Cocogoose";
+  font-family: "Cocogoose", sans-serif;
   color: #ec5242;
-}
-
-.navbar-light .navbar-toggler {
-  z-index: 99;
 }
 
 .navbar-toggler-icon {
@@ -279,6 +348,10 @@ ul {
   width: 1em;
   border: none;
   outline: none;
+}
+
+.about-second-section h3 {
+  padding: 10px 10px 0 5px;
 }
 
 .first-section .first-section-container .event-details h3 {
@@ -290,6 +363,7 @@ ul {
   text-align: center;
   padding: 20px;
 }
+
 .section-speakers-heading h2 {
   font-family: "lato", sans-serif;
   font-weight: 600;
@@ -321,7 +395,7 @@ ul {
   font-style: italic;
   color: #ec5242;
   margin-bottom: -13px;
-  font-family: "Cocogoose";
+  font-family: "Cocogoose", sans-serif;
 }
 
 .speaker-section .speaker-details .dots {
@@ -345,6 +419,15 @@ ul {
   padding: 30px;
 }
 
+.about-second-section h3 span {
+  border-bottom: 2px solid #ec5242;
+}
+
+.events h4 span {
+  border-bottom: 2px solid #ec5242;
+  padding-bottom: 5px;
+}
+
 .partners-section .partners-heading span {
   border-bottom: 2px solid #ec5242;
   padding-bottom: 5px;
@@ -358,6 +441,10 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.about-second-section img {
+  width: 100%;
 }
 
 .partners-section .partners-flex img {
@@ -374,25 +461,17 @@ ul {
 
 .footer-flex .footer-logo {
   padding: 20px;
-  font-size: 25px;
+  font-size: 12px;
   font-weight: 600;
-  font-family: "Cocogoose";
-}
-
-.footer-flex .footer-logo a {
-  text-decoration: none;
-  color: #272a31;
+  font-family: "Cocogoose", sans-serif;
 }
 
 .footer-flex .copyright {
   font-size: 13px;
   padding: 33px 20px 20px 20px;
   color: #272a31;
-  padding-top: 12px;
   font-weight: 500;
 }
-
-/* About page style */
 
 .first-section .about-paragraph {
   position: relative;
@@ -401,10 +480,11 @@ ul {
   text-align: center;
   background: white;
   font-size: 9px;
-  font-family: "COCOGOOSE";
+  font-family: "Cocogoose", sans-serif;
   color: #272a31;
   line-height: 20px;
 }
+
 .first-section .contact .p-contact {
   text-align: center;
   font-size: 13px;
@@ -418,28 +498,16 @@ ul {
 }
 
 .about-second-section {
-  margin-top: 41rem;
+  margin-top: 35rem;
   position: relative;
   text-align: center;
-}
-
-.about-second-section img {
-  width: 100%;
-}
-
-.about-second-section h3 {
-  padding: 10px 10px 0 5px;
-}
-
-.about-second-section h3 span {
-  border-bottom: 2px solid #ec5242;
 }
 
 .about-second-section p {
   font-size: 12px;
   margin: 37px;
   color: #272a31;
-  font-weight: 00;
+  font-weight: 500;
 }
 
 .events {
@@ -448,11 +516,6 @@ ul {
 
 .events h4 {
   font-size: 20px;
-}
-
-.events h4 span {
-  border-bottom: 2px solid #ec5242;
-  padding-bottom: 5px;
 }
 
 .events p {
