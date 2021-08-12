@@ -6,13 +6,13 @@
 # Project Name
 ## Software Developer Global Summit
 
-** Software Developer is an annual conference event that is held internationally for individuals to participate in real life and join us live on YouTube. Focus of this annual event is to address individuals, who wants to start their career on developing or have already started. ** 
+Software Developer is an annual conference event that is held internationally for individuals to participate in real life and join us live on YouTube. Focus of this annual event is to address individuals, who wants to start their career on developing or have already started.
 
 ## Live Demo Link for Github-Page Branch
 
 [Click Here to view presentation video]()
 
-[Click Here to view live version]()
+[Click Here to view live version](https://donard97.github.io/First-Capstone-Project/)
 
 ## Built With
 ### Major languages
