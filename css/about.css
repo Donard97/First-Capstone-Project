@@ -310,7 +310,7 @@ ul {
 }
 
 .first-section {
-  background-image: url(/images/first-section.png);
+  background-image: url(../images/first-section.png);
   background-repeat: no-repeat;
   margin-top: -4rem;
   position: absolute;

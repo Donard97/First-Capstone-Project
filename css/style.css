@@ -296,7 +296,7 @@ ul {
 }
 
 .first-section {
-  background-image: url(/images/first-section.png);
+  background-image: url(../images/first-section.png);
   background-repeat: no-repeat;
   margin-top: -5.2rem;
   position: absolute;
@@ -351,7 +351,7 @@ ul {
 
 .second-section {
   margin-top: 42rem;
-  background-image: url(/images/repeat-bg.png);
+  background-image: url(../images/repeat-bg.png);
   color: white;
 }
 
