@@ -586,3 +586,47 @@ ul {
   width: 100%;
   padding: 10px 20px 20px 20px;
 }
+
+@media screen and (min-width: 766px) and (max-width: 1023px) {
+  .first-section {
+    width: 126% !important;
+  }
+
+  .navbar-expand-md {
+    width: 126% !important;
+  }
+
+  .events {
+    width: 126%;
+  }
+
+  footer {
+    width: 126%;
+  }
+
+  .top-bar-section {
+    width: 126%;
+  }
+
+  .second-section {
+    width: 126%;
+  }
+
+  .program-list {
+    margin-left: 6rem !important;
+    padding-bottom: 41px !important;
+}
+
+  .section-speakers-heading {
+    width: 125%;
+}
+
+  .featured-speakers {
+    padding: 0 10rem ;
+    width: 125%;
+}
+
+  .partners-section {
+    width: 125%;
+  }  
+}
