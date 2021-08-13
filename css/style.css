@@ -615,18 +615,18 @@ ul {
   .program-list {
     margin-left: 6rem !important;
     padding-bottom: 41px !important;
-}
+  }
 
   .section-speakers-heading {
     width: 125%;
-}
+  }
 
   .featured-speakers {
-    padding: 0 10rem ;
+    padding: 0 10rem;
     width: 125%;
-}
+  }
 
   .partners-section {
     width: 125%;
-  }  
+  }
 }
