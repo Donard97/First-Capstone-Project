@@ -1,0 +1,630 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "lato", sans-serif;
+}
+
+.hamburger {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  z-index: 99;
+  border: none;
+}
+
+.hamburger .bar {
+  width: 100%;
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: #272a31;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.hamburger::after {
+  width: 100%;
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: #272a31;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.hamburger::before {
+  width: 100%;
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: #272a31;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.hamburger.is-active::before {
+  transform: rotate(-45deg) translate(-6px, 2px);
+}
+
+.hamburger.is-active::after {
+  transform: rotate(45deg) translate(-10px, -6px);
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+.mobile-nav {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 100%;
+  min-height: 100vh;
+  z-index: 98;
+  background-color: #d3d3d3;
+  margin-top: 60px;
+  height: 3px;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+}
+
+.mobile-nav ul {
+  display: block;
+  width: 100%;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 600;
+  transition: 0.4s;
+  margin: 0;
+  margin-top: 4rem;
+  margin-left: -1rem;
+}
+
+.mobile-nav ul li {
+  padding: 10px 0;
+}
+
+.mobile-nav ul li a {
+  text-decoration: none;
+  color: #272a31;
+  font-family: "lato", sans-serif;
+}
+
+.footer-flex .footer-logo a {
+  text-decoration: none;
+  color: #272a31;
+}
+
+.mobile-nav ul li a:hover {
+  color: #ec5242;
+}
+
+.mobile-nav.is-active {
+  left: 0;
+  width: 100%;
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: Cocogoose;
+  src: url(../fonts/Cocogoose\ Pro-trial.ttf);
+}
+
+@media only screen and (min-width: 768px) {
+  .top-bar-section {
+    display: block;
+    position: relative;
+    background-color: black;
+    padding-right: 8.5rem;
+  }
+
+  .top-bar-container {
+    width: 85%;
+    margin: auto;
+  }
+
+  .top-bar {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .top-bar li {
+    background-color: black;
+    color: white;
+    padding-inline: 0.8%;
+    cursor: pointer;
+  }
+
+  .top-bar a {
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+    padding-top: 4px;
+    text-decoration: none;
+  }
+
+  .footer-flex .footer-logo a {
+    color: white;
+    font-weight: 500 !important;
+  }
+
+  .top-bar a:hover {
+    color: #ec5242;
+  }
+
+  .navbar-expand-md {
+    padding-left: 16rem;
+  }
+
+  .btn-outline-success {
+    margin-right: 14rem;
+  }
+
+  .nav-link:hover {
+    color: #ec5242 !important;
+  }
+
+  .first-section {
+    margin-top: 0 !important;
+    width: 100%;
+    padding-left: 16rem;
+  }
+
+  .first-section .first-section-container {
+    margin-top: 6rem;
+  }
+
+  .first-section .second-heading {
+    display: none;
+  }
+
+  .first-section h1 {
+    font-size: 47px !important;
+    margin: 0 4rem;
+    padding-top: 5rem;
+    width: 70%;
+  }
+
+  .first-section .event-details {
+    padding-top: 2rem;
+  }
+
+  .about-second-section img {
+    width: 25% !important;
+  }
+
+  .navbar-brand img {
+    width: 20%;
+  }
+
+  .first-section .about-paragraph {
+    padding: 18px 35px !important;
+    font-size: 12px !important;
+    width: 70%;
+    margin-left: 5rem;
+    margin-top: 4rem;
+    font-family: "lato", sans-serif !important;
+  }
+
+  .first-section .p-contact {
+    padding-right: 15rem !important;
+  }
+
+  .about-second-section h3 .span-1 {
+    display: none;
+  }
+
+  .about-second-section h3 .span-2 {
+    border-bottom: 2px solid #ec5242;
+  }
+
+  .events .events-images {
+    padding-bottom: 3rem;
+  }
+
+  .events .events-images .first-event {
+    width: 35%;
+    height: 280px;
+  }
+
+  .events .events-images .second-event {
+    width: 35%;
+    height: 280px;
+    margin-top: 20px;
+  }
+
+  footer {
+    background-color: #272a31;
+  }
+
+  .footer-flex {
+    width: 73% !important;
+    padding: 2rem 0;
+  }
+
+  .copyright {
+    color: white !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-brand {
+    display: none;
+  }
+
+  .top-bar-section {
+    display: none;
+  }
+
+  .first-section .about-paragraph .about-us span {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar .container-fluid .navbar-brand {
+    display: none;
+  }
+
+  .top-bar-section {
+    display: none;
+  }
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+  z-index: 99;
+}
+
+.navbar .container-fluid .btn-outline-success {
+  color: #ec5242;
+  border: 3px solid #ec5242;
+  font-weight: 600;
+}
+
+.navbar .container-fluid .btn-outline-success:hover {
+  color: white;
+  background-color: #ec5242;
+}
+
+.first-section {
+  background-image: url(../images/first-section.png);
+  background-repeat: no-repeat;
+  margin-top: -4rem;
+  position: absolute;
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+  background-position: bottom;
+  text-align: center;
+}
+
+.first-section .first-section-container {
+  margin: 20px;
+}
+
+.first-section .first-section-container .second-heading {
+  color: #ec5242;
+  padding-top: 4rem;
+  font-family: "lato", sans-serif;
+}
+
+.first-section .first-section-container .event-details {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Cocogoose", sans-serif;
+}
+
+.first-section .first-section-container h1 {
+  font-size: 26px;
+  font-family: "Cocogoose", sans-serif;
+  color: #ec5242;
+}
+
+.navbar-toggler-icon {
+  height: 1em;
+  width: 1em;
+  border: none;
+  outline: none;
+}
+
+.about-second-section h3 {
+  padding: 10px 10px 0 5px;
+}
+
+.event-details h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.section-speakers-heading {
+  text-align: center;
+  padding: 20px;
+}
+
+.section-speakers-heading h2 {
+  font-family: "lato", sans-serif;
+  font-weight: 600;
+}
+
+.section-speakers-heading h2 span {
+  border-bottom: 3px solid #ec5242;
+  padding-bottom: 10px;
+}
+
+.speaker-section {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.speaker-section .speaker-image {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+}
+
+.speaker-section .speaker-details .speaker-name {
+  font-size: 17px;
+  color: #272a31;
+}
+
+.speaker-section .speaker-details .speaker-designation {
+  font-size: 10px;
+  font-style: italic;
+  color: #ec5242;
+  margin-bottom: -13px;
+  font-family: "Cocogoose", sans-serif;
+}
+
+.speaker-section .dots {
+  margin: 0;
+}
+
+.speaker-section .speaker-history {
+  font-size: 9px;
+  margin-bottom: 0;
+}
+
+.partners-section {
+  background-color: #414246;
+  color: white;
+  text-align: center;
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+}
+
+.partners-section .partners-heading {
+  padding: 30px;
+}
+
+.about-second-section h3 span {
+  border-bottom: 2px solid #ec5242;
+}
+
+.events h4 span {
+  border-bottom: 2px solid #ec5242;
+  padding-bottom: 5px;
+}
+
+.partners-section .partners-heading span {
+  border-bottom: 2px solid #ec5242;
+  padding-bottom: 5px;
+}
+
+.partners-section .partners-heading strong {
+  font-weight: 500;
+}
+
+.partners-section .partners-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-second-section img {
+  width: 100%;
+}
+
+.partners-section .partners-flex img {
+  width: 100px;
+  margin: 10px;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-flex .footer-logo {
+  padding: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Cocogoose", sans-serif;
+}
+
+.footer-flex .copyright {
+  font-size: 13px;
+  padding: 33px 20px 20px 20px;
+  color: #272a31;
+  font-weight: 500;
+}
+
+.first-section .about-paragraph {
+  position: relative;
+  border: 1px solid #d3d3d3;
+  padding: 18px;
+  text-align: center;
+  background: white;
+  font-size: 9px;
+  font-family: "Cocogoose", sans-serif;
+  color: #272a31;
+  line-height: 20px;
+}
+
+.first-section .contact .p-contact {
+  text-align: center;
+  font-size: 13px;
+  padding: 30px;
+  font-family: "lato", sans-serif;
+  font-weight: 500;
+}
+
+.first-section .contact .p-contact strong {
+  border-bottom: 1px solid black;
+}
+
+.about-second-section {
+  margin-top: 35rem;
+  position: relative;
+  text-align: center;
+}
+
+.about-second-section p {
+  font-size: 12px;
+  margin: 37px;
+  color: #272a31;
+  font-weight: 500;
+}
+
+.events {
+  text-align: center;
+}
+
+.events h4 {
+  font-size: 20px;
+}
+
+.events p {
+  font-size: 11px;
+  margin: 30px 20px;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+  line-height: 20px;
+}
+
+.events .first-event {
+  width: 100%;
+  padding: 20px 20px 10px 20px;
+}
+
+.events .second-event {
+  width: 100%;
+  padding: 10px 20px 20px 20px;
+}
+
+@media screen and (min-width: 766px) and (max-width: 1023px) {
+  .first-section {
+    width: 120% !important;
+  }
+
+  .navbar-expand-md {
+    width: 120% !important;
+  }
+
+  .events {
+    width: 120%;
+  }
+
+  footer {
+    width: 120%;
+  }
+
+  .top-bar-section {
+    width: 120%;
+  }
+
+  .first-section .first-section-container h1 {
+    width: 100%;
+    margin: 0 -6rem;
+  }
+
+  .first-section .about-paragraph {
+    margin: 0;
+  }
+
+  .navbar .container-fluid .btn-outline-success {
+    width: 128px;
+  }
+
+  .about-second-section h3 {
+    margin-left: 12rem;
+  }
+
+  .about-second-section p {
+    margin-left: 15rem;
+  }
+
+  .about-second-section img {
+    margin-left: 13rem;
+  }
+
+  .events h4 {
+    margin-left: 5rem;
+  }
+
+  .events p {
+    margin-left: 7rem;
+  }
+
+  hr:not([size]) {
+    width: 121%;
+  }
+
+  .footer-flex {
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1168px) {
+  .navbar .container-fluid .btn-outline-success {
+    width: 128px;
+    margin-right: 12rem;
+  }
+
+  .first-section h1 {
+    width: 100%;
+    padding-top: 3rem;
+    margin: 0 -6rem;
+  }
+
+  .navbar-expand-md .navbar-nav {
+    padding-right: 2rem;
+  }
+
+  .first-section .about-paragraph {
+    width: 100%;
+    margin: 0 -6rem;
+  }
+
+  .footer-flex {
+    margin-left: 2rem;
+  }
+
+  .navbar-brand img {
+    width: 72%;
+  }
+}

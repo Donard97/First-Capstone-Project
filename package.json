@@ -1,0 +1,25 @@
+{
+  "name": "first-capstone-project",
+  "version": "1.0.0",
+  "description": "This is my first capstone project !",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Donard97/First-Capstone-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Donard97/First-Capstone-Project/issues"
+  },
+  "homepage": "https://github.com/Donard97/First-Capstone-Project#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0"
+  }
+}
